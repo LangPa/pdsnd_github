@@ -191,7 +191,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-          """Displays chunks of the raw data"""
+          """Displays chunks of the raw data in rows of 5."""
           i = 0
           
           while True:
