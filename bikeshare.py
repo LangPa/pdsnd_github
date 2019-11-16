@@ -1,9 +1,8 @@
 import analysis_tools as a
 
           
-          
-def main():
-    while True:
+if __name__ == "__main__":
+	while True:
         city, month, day = a.get_filters()
         df = a.load_data(city, month, day)
 
@@ -16,7 +15,3 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
-
-if __name__ == "__main__":
-	main()
